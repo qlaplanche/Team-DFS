@@ -4,8 +4,13 @@ import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
-import Logo from '../img/DFS.png';
 // Les images ici
+import Logo from '../img/DFS.png';
+import Gaetan from '../img/gaetan.jpg';
+import Alexandre from '../img/alexandre.jpg';
+import Quentin from '../img/quentin.jpg';
+import Pierre from '../img/pierre.jpg';
+import Joffrey from '../img/joffrey.jpg';
 
 import AppBarDFS from './AppBarDFS';
 
@@ -24,12 +29,12 @@ const styles = {
 
 const tilesData = [
   {
-    img: Logo,
+    img: Quentin,
     name: 'Quentin Laplanche',
     fonction: 'Capitaine de l\'équipe',
   },
   {
-    img: Logo,
+    img: Gaetan,
     name: 'Gaëtan Menat',
     fonction: 'Responsable Back-end',
   },
@@ -39,12 +44,12 @@ const tilesData = [
     fonction: 'Le Designer (Génie du web)',
   },
   {
-    img: Logo,
+    img: Alexandre,
     name: 'Alexandre Poincet',
     fonction: 'Le raleur de la base de données',
   },
   {
-    img: Logo,
+    img: Pierre,
     name: 'Pierre Hourquebie',
     fonction: 'pierre ',
   },
@@ -54,7 +59,7 @@ const tilesData = [
     fonction: 'Le respo Git',
   },
   {
-    img: Logo,
+    img: Joffrey,
     name: 'Joffrey Laurent',
     fonction: 'L\'Alcoolic',
   },
