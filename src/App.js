@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import './App.css';
-
 import { BrowserRouter, Route } from "react-router-dom";
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import './App.css';
 import Loader from "./components/loader";
-
-const Home = () => <h1> Hello </h1>
+import TeamGrid from './components/TeamGrid';
+import AppBarDFS from './components/AppBarDFS';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        {/* <Route path="/" component={Home}></Route> */}
-        <Route path="/" component={Loader}></Route>
+        <MuiThemeProvider>
+          <AppBarDFS />
+          <Route exact path="/" component={Loader}></Route>
+          <Route path="/team" component={TeamGrid}></Route>
+         </MuiThemeProvider>
       </BrowserRouter>
     );
   }

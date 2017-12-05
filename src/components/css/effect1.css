@@ -1,6 +1,6 @@
 .ip-header {
 	position: fixed;
-	top: 0;
+	top: 200;
 	z-index: 100;
 	min-height: 480px;
 	width: 100%;

@@ -1,7 +1,25 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import Logo from '../img/DFS.png';
 import './css/effect1.css';
 import './css/normalize.css';
+
+import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
+
+import TeamStepper from './TeamStepper';
+
+const styles = {
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around'
+    },
+    buttonMargin: {
+        padding: 5
+    }
+}
+
 
 export default class Loader extends Component {
     render(){
@@ -21,20 +39,16 @@ export default class Loader extends Component {
                     </header>
                     <div className="ip-main">
                         <h2>Bientot pour vous le site de la Team-DFS</h2>
-                        <div className="browser clearfix">
-                            <div className="box">
-                                <span className="icon-bell"></span>
-                                <p>Do Re Mi What Fa Si Ti Doi Nemo Do Re Mi What Fa Si Ti Doi Nemo</p>
-                            </div>
-                            <div className="box">
-                                <span className="icon-heart"></span>
-                                <p>E La Yo Na Ti Do Pa Pa Noah Do Re Mi What Fa Si Ti Doi Nemo</p>
-                            </div>
-                            <div className="box">
-                                <span className="icon-cog"></span>
-                                <p>No way! Hey Hey, me ok! Do Re Mi What Fa Si Ti Doi Nemo</p>
-                            </div>
+
+                        <div style={styles.root}>
+                          <RaisedButton label="Accéder au site" disabled />
+                            <Link to="/team">
+                                <RaisedButton style={styles.buttonMargin}>
+                                    Voir l'équipe
+                                </RaisedButton>
+                            </Link>
                         </div>
+                        <TeamStepper/>
                     </div>
                </div>
         );
