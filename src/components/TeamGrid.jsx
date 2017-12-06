@@ -33,8 +33,8 @@ const tilesData = [
   {
     img: Quentin,
     name: 'Quentin Laplanche',
-    fonction: 'Capitaine de l\'équipe',
-    citation:'Même quand il a tort le chef a toujours raison !'
+    fonction: 'Captain Colon',
+    citation:'The only way to gain respect is terror.'
   },
   {
     img: Gaetan,
@@ -45,32 +45,32 @@ const tilesData = [
   {
     img: Jeremy,
     name: 'Jérémy Petit',
-    fonction: 'Le Designer (Génie du web)',
-    citation:'Donne moi une citation'
+    fonction: ' Webmaster but mostly master of the web',
+    citation:'HTML, CSS, JS, PHP : I know everything!'
   },
   {
     img: Alexandre,
     name: 'Alexandre Poincet',
-    fonction: 'Le raleur de la base de données',
-    citation:'Donne moi une citation'
+    fonction: ' Grumpy expert in database',
+    citation: "Nan mais en vrai c'est vraiment de la merde"
   },
   {
     img: Pierre,
     name: 'Pierre Hourquebie',
-    fonction: 'Le respo course',
-    citation:'Donne moi une citation'
+    fonction: 'Shopping boy 🛍',
+    citation: "Je peux pas trop ce soir, j'dois aller faire les courses."
   },
   {
     img: Nothing,
     name: 'Yann Caumartin',
-    fonction: 'Le respo Git',
-    citation:'Donne moi une citation'
+    fonction: ' Git genius ',
+    citation:'Le premier qui génère un conflit...'
   },
   {
     img: Joffrey,
     name: 'Joffrey Laurent',
-    fonction: 'L\'Alcoholic',
-    citation:'Donne moi une citation'
+    fonction: 'L\'Alcoholic 🍺',
+    citation:"Il faut ramener de l'alcool pour la nuit de l'info ?"
   },
   {
     img: Nothing,
