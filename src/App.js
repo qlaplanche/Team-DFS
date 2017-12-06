@@ -15,8 +15,8 @@ class App extends Component {
         <MuiThemeProvider>
           <AppBarDFS />
           <Switch>
-            <Route path="/team" component={TeamGrid}></Route>
-            <Route path="/" component={Loader}></Route>
+            <Route exact path="/team" component={TeamGrid}></Route>
+            <Route exact path="/" component={Loader}></Route>
           </Switch>  
           <SnackbarSponsor/>
          </MuiThemeProvider>

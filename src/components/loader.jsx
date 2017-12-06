@@ -22,6 +22,10 @@ const styles = {
 
 
 export default class Loader extends Component {
+    redirectToSite() {
+        window.location = "/dfs/site"
+    }
+
     render(){
         return(
             <div id="ip-container" className="ip-container">
@@ -41,7 +45,7 @@ export default class Loader extends Component {
                         <h2>Bienvenue sur le site de la Team-DFS</h2>
 
                         <div style={styles.root}>
-                          <RaisedButton label="Accéder au site" disabled />
+                          <RaisedButton label="Accéder au site" onClick={this.redirectToSite}/>
 
                             <RaisedButton
                                 containerElement={<Link to="/team" />}
