@@ -39,7 +39,7 @@ export default class Loader extends Component {
                         </div>
                     </header>
                     <div className="ip-main">
-                        <h2>Bientôt pour vous le site de la Team-DFS</h2>
+                        <h2>Bienvenue sur le site de la Team-DFS</h2>
 
                         <div style={styles.root}>
                           <RaisedButton label="Accéder au site" disabled />

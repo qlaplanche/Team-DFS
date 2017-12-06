@@ -13,15 +13,9 @@ export default class SnackbarExampleSimple extends React.Component {
     setTimeout(() => {
         this.setState({
           open: true
-        });
-      }, 5000);
+        })}, 5000);
   }
 
-  handleClick = () => {
-    this.setState({
-      open: true,
-    });
-  };
 
   handleRequestClose = () => {
     this.setState({

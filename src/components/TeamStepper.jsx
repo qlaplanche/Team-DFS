@@ -7,6 +7,8 @@ import {
 import {green400} from 'material-ui/styles/colors';
 import  AvPlayArrow  from 'material-ui/svg-icons/av/play-arrow';
 
+import NightProgress from './NightProgress'
+
 class TeamStepper extends React.Component {
 
   state = {
@@ -34,11 +36,11 @@ class TeamStepper extends React.Component {
       case 0:
         return 'Select campaign settings...';
       case 1:
-        return 'What is an ad group anyways?';
+        return (<NightProgress value={75} />);
       case 2:
         return 'This is the bit I really care about!';
       default:
-        return 'You\'re a long way from home sonny jim!';
+        return 'You\'re a long way f';
     }
   }
 
@@ -61,11 +63,11 @@ class TeamStepper extends React.Component {
             <StepLabel>Réalisation du Site</StepLabel>
           </Step>
         </Stepper>
-        {/* <div style={contentStyle}>
+        <div style={contentStyle}>
             <div>
               <p>{this.getStepContent(stepIndex)}</p>
             </div>
-        </div> */}
+        </div>
       </div>
     );
   }
