@@ -10,9 +10,6 @@ const styles = {
 };
 
 class AppBarDFS extends Component {
-  constructor(props){
-    super(props);
-  }
 
   handleRedirection() {
    window.location = '/dfs' 

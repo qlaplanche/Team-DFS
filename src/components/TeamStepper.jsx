@@ -36,7 +36,7 @@ class TeamStepper extends React.Component {
       case 0:
         return 'Select campaign settings...';
       case 1:
-        return (<NightProgress value={75} />);
+        return (<NightProgress value={5} />);
       case 2:
         return 'This is the bit I really care about!';
       default:

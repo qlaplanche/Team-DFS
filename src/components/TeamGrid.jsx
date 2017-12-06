@@ -3,7 +3,6 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import Subheader from 'material-ui/Subheader';
 
 // Les images ici
-import Logo from '../img/DFS.png';
 import Gaetan from '../img/gaetan.jpg';
 import Alexandre from '../img/alexandre.jpg';
 import Quentin from '../img/quentin.jpg';
@@ -39,8 +38,8 @@ const tilesData = [
   {
     img: Gaetan,
     name: 'Gaëtan Menat',
-    fonction: 'Responsable Back-end',
-    citation:'Donne moi une citation'
+    fonction: 'The Solution',
+    citation:'If you need me: take an appointment like everyone else.'
   },
   {
     img: Jeremy,

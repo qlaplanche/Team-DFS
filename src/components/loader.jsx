@@ -5,7 +5,6 @@ import './css/effect1.css';
 import './css/normalize.css';
 
 import RaisedButton from 'material-ui/RaisedButton';
-import FlatButton from 'material-ui/FlatButton';
 
 import TeamStepper from './TeamStepper';
 

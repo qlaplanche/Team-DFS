@@ -27,8 +27,8 @@
 .ip-logo {
 	top: 0;
 	height: 100%;
-	-webkit-transform: translate3d(0,20%,0);
-	transform: translate3d(0,20%,0);
+	-webkit-transform: translate3d(0,10%,0);
+	transform: translate3d(0,10%,0);
 }
 
 .ip-logo img {
@@ -75,7 +75,7 @@
 
 .ip-desc{
 	opacity:1;
-	bottom: 30%;
+	bottom: 40%;
 }
 
 .ip-desc:after {
@@ -86,7 +86,7 @@
 }
 
 .ip-loader {
-	bottom: 20%;
+	bottom: 30%;
 }
 
 .ip-header .ip-inner {
