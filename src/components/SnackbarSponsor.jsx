@@ -40,7 +40,7 @@ export default class SnackbarExampleSimple extends React.Component {
           open={this.state.open}
           message={this.state.message}
           autoHideDuration={4000}
-          action="INSA"
+          action="INSA Centre Val de Loire"
           onActionClick = {this.handleRedirection}
           onRequestClose={this.handleRequestClose}
         />
