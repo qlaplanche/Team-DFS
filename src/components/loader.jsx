@@ -5,6 +5,7 @@ import './css/effect1.css';
 import './css/normalize.css';
 
 import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
 
 import TeamStepper from './TeamStepper';
 
@@ -15,7 +16,8 @@ const styles = {
       justifyContent: 'space-around'
     },
     buttonMargin: {
-        padding: 5
+        padding: '0 1em',
+        width: '100%'
     }
 }
 
@@ -41,13 +43,11 @@ export default class Loader extends Component {
 
                         <div style={styles.root}>
                           <RaisedButton label="Accéder au site" disabled />
-                          {/* <RaisedButton label="Voir l'équipe" disabled/> */}
 
-                            <Link to="/team">
-                                <RaisedButton style={styles.buttonMargin}>
-                                    Voir l'équipe
-                                </RaisedButton>
-                            </Link>
+                            <RaisedButton
+                                containerElement={<Link to="/team" />}
+                                linkButton={true}
+                                label="Voir l'équipe"/>
                         </div>
                         <TeamStepper/>
                     </div>
