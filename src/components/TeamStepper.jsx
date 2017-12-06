@@ -4,17 +4,9 @@ import {
   Stepper,
   StepLabel,
 } from 'material-ui/Stepper';
-import RaisedButton from 'material-ui/RaisedButton';
-import FlatButton from 'material-ui/FlatButton';
 import {green400} from 'material-ui/styles/colors';
 import  AvPlayArrow  from 'material-ui/svg-icons/av/play-arrow';
 
-/**
- * Horizontal steppers are ideal when the contents of one step depend on an earlier step.
- * Avoid using long step names in horizontal steppers.
- *
- * Linear steppers require users to complete one step in order to move on to the next.
- */
 class TeamStepper extends React.Component {
 
   state = {

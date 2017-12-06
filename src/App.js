@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
@@ -10,11 +10,13 @@ import AppBarDFS from './components/AppBarDFS';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/dfs">
         <MuiThemeProvider>
           <AppBarDFS />
-          <Route exact path="/" component={Loader}></Route>
-          <Route path="/team" component={TeamGrid}></Route>
+          <Switch>
+            <Route path="/team" component={TeamGrid}></Route>
+            <Route path="/" component={Loader}></Route>
+          </Switch>  
          </MuiThemeProvider>
       </BrowserRouter>
     );

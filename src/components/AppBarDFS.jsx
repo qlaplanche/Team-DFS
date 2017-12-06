@@ -1,10 +1,8 @@
 import React,{Component} from 'react';
 import AppBar from 'material-ui/AppBar';
-import {red900} from 'material-ui/styles/colors'
 
 import FlatButton from 'material-ui/FlatButton'
 
-import Logo from '../img/DFS.png';
 
 class AppBarDFS extends Component {
   constructor(props){

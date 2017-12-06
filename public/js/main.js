@@ -9,7 +9,6 @@
  * http://www.codrops.com
  */
 (function() {
-
 	var support = { animations : Modernizr.cssanimations },
 		container = document.getElementById( 'ip-container' ),
 		header = container.querySelector( 'header.ip-header' ),

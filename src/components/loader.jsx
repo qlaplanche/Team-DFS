@@ -5,7 +5,6 @@ import './css/effect1.css';
 import './css/normalize.css';
 
 import RaisedButton from 'material-ui/RaisedButton';
-import Paper from 'material-ui/Paper';
 
 import TeamStepper from './TeamStepper';
 
@@ -42,6 +41,8 @@ export default class Loader extends Component {
 
                         <div style={styles.root}>
                           <RaisedButton label="Accéder au site" disabled />
+                          {/* <RaisedButton label="Voir l'équipe" disabled/> */}
+
                             <Link to="/team">
                                 <RaisedButton style={styles.buttonMargin}>
                                     Voir l'équipe
