@@ -6,6 +6,7 @@ import './App.css';
 import Loader from "./components/loader";
 import TeamGrid from './components/TeamGrid';
 import AppBarDFS from './components/AppBarDFS';
+import SnackbarSponsor from './components/SnackbarSponsor';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/team" component={TeamGrid}></Route>
             <Route path="/" component={Loader}></Route>
           </Switch>  
+          <SnackbarSponsor/>
          </MuiThemeProvider>
       </BrowserRouter>
     );
