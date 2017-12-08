@@ -23,7 +23,7 @@ const styles = {
 
 export default class Loader extends Component {
     redirectToSite() {
-        window.location = "/dfs/site"
+        window.location = "https://isi.insa-cvl.fr:10010/dfssite"
     }
 
     render(){

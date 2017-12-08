@@ -15,12 +15,16 @@ class AppBarDFS extends Component {
    window.location = '/dfs' 
   }
 
+  redirectToSite() {
+    window.location = "https://isi.insa-cvl.fr:10010/dfssite"
+}
+
   render(){
     return(
       <AppBar 
       style={{backgroundColor: '#780003'}}
       iconClassNameLeft="play_arrow"
-      iconElementRight={<FlatButton label="Voir le site de la Nuit" disabled />}
+      iconElementRight={<FlatButton onClick={this.redirectToSite} label="Voir le site de la Nuit" disabled />}
       title={<span style={styles.title}>Team DFS;</span>}
       onTitleClick={this.handleRedirection}
       iconClassNameRight="muidocs-icon-navigation-expand-more"

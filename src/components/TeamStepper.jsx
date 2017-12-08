@@ -13,7 +13,7 @@ class TeamStepper extends React.Component {
 
   state = {
     finished: true,
-    stepIndex: 1,
+    stepIndex: 2,
   };
 
   handleNext = () => {
@@ -35,9 +35,9 @@ class TeamStepper extends React.Component {
     switch (stepIndex) {
       case 0:
         return 'Select campaign settings...';
-      case 1:
-        return (<NightProgress value={5} />);
       case 2:
+        return (<NightProgress value={100} />);
+      case 1:
         return 'This is the bit I really care about!';
       default:
         return 'You\'re a long way f';
